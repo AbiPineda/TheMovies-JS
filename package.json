@@ -1,0 +1,19 @@
+{
+  "name": "themovies-js",
+  "version": "1.0.0",
+  "description": "App de Peliculas - API",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbiPineda/TheMovies-JS.git"
+  },
+  "author": "AbiPineda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AbiPineda/TheMovies-JS/issues"
+  },
+  "homepage": "https://github.com/AbiPineda/TheMovies-JS#readme"
+}
