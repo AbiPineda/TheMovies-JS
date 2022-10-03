@@ -34,6 +34,9 @@ function navigator(){
     else{
         homePage();
     }
+    //Para que envie el scroll al inicio.
+    document.documentElement.scrollTop = 0;
+    document.body.scrollTop = 0;
 }
 
 function homePage(){
