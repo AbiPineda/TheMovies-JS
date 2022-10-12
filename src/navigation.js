@@ -1,7 +1,7 @@
 //btn buscar
-searchFormBtn.addEventListener('click',()=>{
-    location.hash = `#search=${searchFormInput.value.trim()}`;
-});
+searchFormBtn.addEventListener('click', ()=>{
+    location.hash='#search=' + searchFormInput.value.split(" ").join('');
+  });
 
  //btn ver mas (tendencias)
 trendingBtn.addEventListener('click',()=>{
