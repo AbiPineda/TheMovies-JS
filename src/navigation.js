@@ -9,8 +9,14 @@ trendingBtn.addEventListener('click',()=>{
 });
 
 //btn flechita
+let historial = [];
 arrowBtn.addEventListener('click',()=>{
-    location.hash = window.history.back();
+    historial.pop()
+    if (historial.length > 0) {
+        location.hash = '#search=' + historial[historial.length - 1]
+    } else {
+        location.hash = '#home'
+    }
 });
 
 window.addEventListener('DOMContentLoaded', navigator, false);
@@ -137,5 +143,9 @@ function trendsPage(){
     categoriesPreviewSection.classList.add('inactive');
     genericSection.classList.remove('inactive');
     movieDetailSection.classList.add('inactive');
+
+    headerCategoryTitle.innerHTML ='Tendencias';
+
+    getTrendingMovie();
 }
 
