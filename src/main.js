@@ -122,4 +122,15 @@ async function getMovieById(id){
   movieDetailScore.textContent =movie.vote_average;
 
   createCategories(movie.genres, movieDetailCategoriesList);
+
+  //llamamos la funcion para mostrar las peliculas similares
+  getReleatedMoviesByID(id);
+}
+
+async function getReleatedMoviesByID(id) {
+	const {data} = await api(`movie/${id}/recommendations`);
+	const relatedMovies = data.results;
+
+  createMovies(relatedMovies, relatedMoviesContainer);
+	relatedMoviesContainer.scrollTo(0, 0);
 }
